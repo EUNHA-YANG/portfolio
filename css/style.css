@@ -12,6 +12,7 @@ ul {
 
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -106,6 +107,24 @@ header .fa-solid {
   );
   z-index: 1;
 }
+#visual .text img {
+  width: 500px;
+  margin: 20px 0;
+  animation: pulseLogo 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5); /* 살짝 커짐 */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 #visual .text {
   width: 40%;
@@ -120,11 +139,6 @@ header .fa-solid {
   transform: translate(-50%, -50%);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   z-index: 2;
-}
-
-#visual .text span {
-  font-size: 20px;
-  font-weight: bold;
 }
 
 /* btn */
@@ -216,6 +230,15 @@ header .fa-solid {
   height: 100%;
   background-color: #fff;
   transition: width 0.5s ease;
+}
+/* btn */
+
+button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 35px;
 }
 
 /* con02 */
