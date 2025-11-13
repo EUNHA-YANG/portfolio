@@ -1,0 +1,991 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: black;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  font-size: 15px;
+
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .logoimg {
+  width: 150px;
+  height: 50px;
+}
+header .login {
+  background-color: #fd0657;
+  width: 90px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 6px;
+}
+header .login a {
+  width: 100%;
+  display: block;
+}
+header .lg {
+  align-items: center;
+}
+header input {
+  width: 200px;
+  background-color: #414141;
+  padding: 10px;
+  border-radius: 6px;
+}
+header .fa-solid {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+/* visual */
+
+#visual {
+  width: 100%;
+  height: 100vh;
+}
+#visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#visual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#visual .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 1;
+}
+
+#visual .text {
+  width: 40%;
+  text-align: center;
+  color: #fff;
+  margin: 0px auto;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 20px;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+#visual .text span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* btn */
+#visual .btn {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fd0657;
+  margin: 50px auto;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+#visual .btn:hover {
+  background-color: #ff3f7a;
+  transform: scale(1.05);
+}
+
+/* container */
+
+/* CON01 */
+
+.con01 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.con01 {
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  background-color: black;
+  margin: 0px auto;
+  color: #fff;
+  padding: 10px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.con01 .textBox {
+  text-align: center;
+  padding: 100px 0px 50px;
+}
+.con01 ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.con01 ul li {
+  width: 300px;
+  height: 400px;
+  display: none;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.con01 ul li:nth-child(-n + 4) {
+  display: block;
+}
+.con01 .txt h3 {
+  margin-bottom: 20px;
+}
+.con01 span {
+  background-color: #414141;
+  color: #acacac;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  word-break: keep-all;
+  display: inline-block;
+}
+.con01 .navi {
+  width: 100%;
+
+  margin: 50px auto;
+}
+.con01 .bar {
+  margin: 150px auto;
+  width: 1000px;
+  height: 2px;
+  background-color: #646464;
+  display: block;
+}
+.con01 .bar > div {
+  width: 10%;
+  height: 100%;
+  background-color: #fff;
+  transition: width 0.5s ease;
+}
+
+/* con02 */
+
+.con02 iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 65px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+.con02 .vdo iframe:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.con02 {
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  background-color: black;
+  overflow: hidden;
+}
+.con02 .title {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  color: #fff;
+}
+.con02 .title h3 {
+  margin-top: -35px;
+  margin-bottom: 50px;
+}
+.con02 .title img {
+  width: 200px;
+  height: 150px;
+}
+.con02 .vdo {
+  width: 80%;
+  max-width: 1200px;
+  height: 50%;
+  margin: 0px auto;
+}
+
+/* pinkbar */
+.pinkbar {
+  width: 100%;
+  height: 100px;
+  margin: 100px auto;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-color: #fd0657;
+}
+.con02 .pinkbar h2 {
+  margin-top: 35px;
+}
+.pinkbar h2,
+.pinkbar img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pinkbar:hover h2,
+.pinkbar:hover img {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+.pinkbar {
+  background: linear-gradient(90deg, #fd0657, #ff3f7a);
+  transition: 0.5s ease;
+}
+
+.pinkbar:hover {
+  background: linear-gradient(90deg, #ff3f7a, #fd0657);
+}
+
+/* con03 */
+
+.con03 {
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  background-color: black;
+  color: #fff;
+  overflow: hidden;
+}
+
+.con03 .textBox {
+  text-align: center;
+  padding: 100px;
+}
+
+/* 움직이는 img */
+.con03 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.con03 .list {
+  display: flex;
+  padding: 20px;
+}
+.con03 .list li {
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+  padding: 5px;
+}
+.simply-scroll-clip {
+  width: 100%;
+  overflow: hidden;
+}
+.con03 .list2 {
+  display: flex;
+  padding: 20px;
+}
+.con03 .list2 li {
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+  padding: 5px;
+}
+/* btn */
+.con03 .btn {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fd0657;
+  margin: 100px auto;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.con03 .btn:hover {
+  background-color: #ff3f7a;
+  transform: scale(1.05);
+}
+
+/* con04 */
+
+.con04 {
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  background-color: black;
+  color: #fff;
+}
+
+.con04 .all {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  height: 50%;
+  margin: 0px auto;
+}
+.con04 .all2 {
+  width: 100%;
+  height: 50%;
+  margin: 0px auto;
+}
+.con04 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con04 .logo {
+  width: 300px;
+  height: 100px;
+  margin: 0px auto;
+}
+.con04 .left {
+  width: 40%;
+  text-align: center;
+  line-height: 50px;
+}
+.con04 .left .more {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fd0657;
+  margin: 100px auto;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.con04 .left .more:hover {
+  background-color: #ff3f7a;
+  transform: scale(1.05);
+}
+
+.con04 .right {
+  width: 40%;
+}
+
+/* Qa */
+
+.con04 h2 {
+  text-align: center;
+  padding: 50px;
+}
+
+.con04 .Qa li {
+  width: 90%;
+  margin: 0px auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 20px;
+}
+.con04 .Qa li:not(:nth-child(1)) {
+  margin-top: -1px;
+}
+.con04 .title {
+  padding: 5px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-left: 20px;
+  position: relative;
+}
+.con04 .txt {
+  width: 90%;
+  margin: 10px auto 30px;
+  display: none;
+  word-break: keep-all;
+}
+.con04 .btn {
+  display: flex;
+  justify-content: space-between;
+}
+.con04 button {
+  border: none;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+}
+
+.con04 .icon2 {
+  display: none;
+}
+
+.con04 li.on .icon1 {
+  display: none;
+}
+
+.con04 li.on .icon2 {
+  display: block;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 100%;
+  margin: 50px auto;
+  padding: 50px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+footer .Box1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer .left {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+}
+footer .right {
+  font-size: 30px;
+}
+
+footer .Box2 {
+  font-size: 13px;
+  color: #acacac;
+  margin-bottom: 50px;
+}
+
+footer .Box3 {
+  font-style: italic;
+  font-size: 14px;
+  align-items: center;
+}
+footer img {
+  width: 5%;
+  object-fit: cover;
+}
+
+/* 호버 효과 강화 */
+
+.con01 ul li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.con01 ul li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(253, 253, 253, 0.3);
+}
+
+.con03 .list li,
+.con03 .list2 li {
+  transition: transform 0.3s ease;
+}
+
+.con03 .list li:hover,
+.con03 .list2 li:hover {
+  transform: scale(1.1);
+}
+
+footer .right a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .right a:hover {
+  color: #fd0657;
+  transform: translateY(-3px);
+}
+
+/* 반응형 */
+
+/* 태블릿 (768px ~ 1024px) */
+@media (max-width: 1024px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 10px;
+  }
+
+  header .logoimg {
+    width: 120px;
+    height: 40px;
+  }
+
+  header input {
+    width: 150px;
+  }
+
+  /* Visual */
+  #visual .text {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  #visual .text span {
+    font-size: 16px;
+  }
+
+  #visual .btn {
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    margin: 30px auto;
+  }
+
+  /* Con01 */
+  .con01 {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .con01 .textBox {
+    padding: 80px 20px 30px;
+  }
+
+  .con01 ul li {
+    width: 250px;
+    height: 350px;
+  }
+
+  .con01 ul li:nth-child(-n + 4) {
+    display: none;
+  }
+
+  .con01 ul li:nth-child(-n + 2) {
+    display: block;
+  }
+
+  .con01 .bar {
+    width: 80%;
+    margin: 100px auto;
+  }
+
+  /* Con02 */
+  .con02 {
+    height: auto;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+
+  .con02 .vdo {
+    width: 90%;
+    height: 400px;
+  }
+
+  .con02 iframe {
+    border-radius: 30px;
+  }
+
+  .pinkbar {
+    height: auto;
+    padding: 30px 20px;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  .con02 .pinkbar h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  /* Con03 */
+  .con03 {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .con03 .textBox {
+    padding: 80px 20px;
+  }
+
+  .con03 .list li,
+  .con03 .list2 li {
+    width: 250px;
+    height: 180px;
+  }
+
+  .con03 .btn {
+    width: 200px;
+    margin: 80px auto;
+  }
+
+  /* Con04 */
+  .con04 {
+    height: auto;
+  }
+
+  .con04 .all {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+  }
+
+  .con04 .left,
+  .con04 .right {
+    width: 100%;
+  }
+
+  .con04 .left .more {
+    margin: 0px auto;
+  }
+
+  .con04 .all2 {
+    height: auto;
+  }
+
+  .con04 .Qa li {
+    width: 95%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer .Box1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .left {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .right {
+    text-align: center;
+  }
+
+  footer img {
+    width: 10%;
+  }
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    font-size: 13px;
+  }
+
+  header ul {
+    gap: 10px;
+  }
+
+  header .logoimg {
+    width: 100px;
+    height: 35px;
+  }
+
+  header .logo li:not(.logoimg) {
+    display: none;
+  }
+
+  header input {
+    width: 120px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  header .fa-solid {
+    font-size: 20px;
+  }
+
+  header .login {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+  }
+
+  /* Visual */
+  #visual .text {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  #visual .text h2 {
+    font-size: 24px;
+  }
+
+  #visual .text span {
+    font-size: 14px;
+  }
+
+  #visual .btn {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    margin: 20px auto;
+  }
+  .con01 {
+    padding: 30px 0 50px;
+    height: auto;
+  }
+
+  .con01 .textBox {
+    padding: 80px 15px 30px;
+  }
+
+  .con01 .textBox h3 {
+    font-size: 16px;
+  }
+
+  .con01 .textBox h2 {
+    font-size: 24px;
+  }
+
+  /* ul을 세로 배치 */
+  .con01 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  /* 모든 li 기본 스타일 */
+  .con01 ul li {
+    width: 85%;
+    max-width: 350px;
+    height: 480px;
+    margin: 0 auto;
+  }
+
+  .con01 .txt {
+    padding: 10px;
+  }
+
+  .con01 .txt h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .con01 span {
+    font-size: 11px;
+    padding: 4px 6px;
+    margin: 3px;
+  }
+
+  .con01 .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    width: auto;
+    height: auto;
+
+    border-radius: 0;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .con01 .btn:first-of-type {
+    left: 10px;
+  }
+
+  .con01 .btn:last-of-type {
+    right: 10px;
+  }
+
+  .con01 ul {
+    position: relative;
+  }
+
+  /* 프로그레스 바 */
+  .con01 .navi {
+    width: 100%;
+    margin: 50px auto 0;
+  }
+
+  .con01 .bar {
+    width: 90%;
+    height: 3px;
+    background-color: #646464;
+    margin: 0 auto;
+  }
+
+  .con01 .bar > div {
+    height: 100%;
+    background-color: #fd0657;
+    transition: width 0.5s ease;
+  }
+
+  /* Con02 */
+  .con02 .title h3 {
+    font-size: 20px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+  }
+
+  .con02 .vdo {
+    width: 95%;
+    height: 250px;
+  }
+
+  .con02 iframe {
+    border-radius: 20px;
+  }
+
+  .pinkbar {
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
+
+  .con02 .pinkbar h2 {
+    font-size: 16px;
+  }
+
+  .pinkbar img {
+    width: 100px;
+  }
+
+  /* Con03 */
+  .con03 .textBox {
+    padding: 60px 15px;
+  }
+
+  .con03 .textBox h2 {
+    font-size: 24px;
+  }
+
+  .con03 .textBox p {
+    font-size: 14px;
+  }
+
+  .con03 .list li,
+  .con03 .list2 li {
+    width: 200px;
+    height: 150px;
+  }
+
+  .con03 .btn {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 13px;
+    margin: 60px auto;
+  }
+
+  /* Con04 */
+  .con04 h2 {
+    font-size: 22px;
+    padding: 30px 15px;
+  }
+
+  .con04 .all {
+    padding: 30px 0;
+  }
+
+  .con04 .logo {
+    width: 200px;
+    height: 70px;
+  }
+
+  .con04 .left h2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .con04 .left p {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .con04 .left .more {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    margin: 50px auto;
+  }
+
+  .con04 .Qa li {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .con04 .title h4 {
+    font-size: 14px;
+  }
+
+  .con04 .txt {
+    font-size: 13px;
+  }
+
+  .con04 button {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer {
+    margin: 30px auto;
+    padding: 30px 15px;
+  }
+
+  footer .left {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  footer .right {
+    font-size: 24px;
+  }
+
+  footer .Box2 {
+    font-size: 11px;
+  }
+
+  footer .Box3 {
+    font-size: 12px;
+  }
+
+  footer img {
+    width: 15%;
+  }
+}

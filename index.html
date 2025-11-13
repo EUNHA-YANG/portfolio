@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/coustom.js"></script>
+    <!-- 폰트어썸 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <!-- gsap scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <ul class="logo">
+        <li class="logoimg">
+          <a href="index.html"><img src="img/logo.png" /></a>
+        </li>
+        <li><a href="#">구독</a></li>
+        <li><a href="#">개별구매</a></li>
+        <li><a href="#">왓챠파티</a></li>
+        <li><a href="#">애니메이션</a></li>
+      </ul>
+      <ul class="lg">
+        <li>
+          <input type="text" placeholder="제목을 입력하세요" />
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-bell"></i></a>
+        </li>
+        <li class="login"><a href="#">로그인</a></li>
+      </ul>
+    </header>
+
+    <!-- visual -->
+    <div id="visual">
+      <video autoplay muted loop playsinline>
+        <source src="img/vivideo.mp4" type="video/mp4" />
+      </video>
+      <div class="text">
+        <h2>왓챠의 발견</h2>
+        <img src="img/logo fff.png" />
+        <span>지금 당장 보러가세요!</span>
+        <div class="btn">
+          <a href="#"><h3>지금 보러가기</h3></a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+
+    <!-- container -->
+    <div id="container">
+      <section class="con01">
+        <div class="textBox">
+          <h3>WAYCHA에서 만나는</h3>
+          <h2>TOP 10 인기순위 !</h2>
+        </div>
+
+        <ul>
+          <button class="btn">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </button>
+          <li>
+            <a href="#"><img src="img/bg1.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">1. 파묘</a></h3>
+              <span>2025</span><span>청불</span><span>영화</span
+              ><span>호러</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg2.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">2. 약한영웅</a></h3>
+              <span>2025</span><span>학원</span><span>드라마</span
+              ><span>액션</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg3.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">3. 서울의 봄</a></h3>
+              <span>2025</span><span>밀리터리</span><span>영화</span
+              ><span>느와르</span><span>정치</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg4.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">4. 체인소맨</a></h3>
+              <span>2025</span><span>서스펜스</span><span>애니</span
+              ><span>개그</span>
+            </div>
+            <div></div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg5" /></a>
+            <div class="txt">
+              <h3><a href="#">5. 프레데터:죽음의 땅</a></h3>
+              <span>2025</span><span>SF</span><span>액션</span><span>영화</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg6.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">6. 나우 유 씨미</a></h3>
+              <span>2025</span><span>범죄</span><span>액션</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg7.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">7. 극장판 귀멸의 칼날: 무한성편</a></h3>
+              <span>2025</span><span>애니메이션</span><span>일본</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg8.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">8. 극장판 주술회전: 회옥·옥절</a></h3>
+              <span>2025</span><span>애니메이션</span><span>일본</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg9.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">9. 해리 포터와 불의 잔</a></h3>
+              <span>2025</span><span>판타지</span><span>영화</span
+              ><span>어린이</span>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/bg10.jpg" /></a>
+            <div class="txt">
+              <h3><a href="#">10.반지의 제왕 : 반지원정대</a></h3>
+              <span>2025</span><span>어드벤처</span><span>영화</span
+              ><span>판타지</span>
+            </div>
+          </li>
+          <button class="btn">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
+        </ul>
+        <div class="navi">
+          <span></span>
+          <div class="bar">
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- con02 -->
+
+      <section class="con02">
+        <div class="title">
+          <img src="img/logo.png" />
+          <h3>New Contents</h3>
+        </div>
+        <div class="vdo">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/08Z5I-r0szQ?si=13Y9-paALmQKlR1J"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="pinkbar">
+          <h2>언제 어디서나 콘텐츠 스트리밍은</h2>
+          <img src="img/logo fff.png" />
+        </div>
+      </section>
+
+      <!-- con03 -->
+
+      <section class="con03">
+        <div class="textBox">
+          <h2>왓고리즘!</h2>
+          <p>
+            요즘 뜨는 모든 콘텐츠 TV프로그램, 영화, 해외 시리즈, 애니메이션,
+            스포츠
+          </p>
+        </div>
+
+        <ul class="list">
+          <li>
+            <a href="#"><img src="img/list1.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list2.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list3.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list4.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list5.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list6.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list7.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list 8.jpg" /></a>
+          </li>
+        </ul>
+        <ul class="list2">
+          <li>
+            <a href="#"><img src="img/list 21.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list22.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list23.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list24.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list25.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list26.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list27.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/list28.jpg" /></a>
+          </li>
+        </ul>
+        <div class="btn">
+          <a href="#"><h3>지금 보러가기</h3></a>
+        </div>
+      </section>
+
+      <!-- con04 -->
+      <section class="con04">
+        <ul class="all">
+          <li class="left">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <h2>
+              지금 진행중인 <br />
+              다양한 이벤트를 만나보세요 !
+            </h2>
+            <p>다양한 이벤트 중 나에게 딱 맞는 혜택을 찾아보세요.</p>
+            <div class="more">
+              <a href="#"> <h3>왓챠 로그인</h3></a>
+            </div>
+          </li>
+          <li class="right"><img src="img/event.gif" /></li>
+        </ul>
+
+        <!-- Q&A -->
+        <div class="all2">
+          <h2>자주묻는 Q&A</h2>
+
+          <ul class="Qa">
+            <li>
+              <div class="title">
+                <div class="btn">
+                  <h4>왓챠는 무엇인가요?</h4>
+                  <button>
+                    <div class="icon1">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon2">
+                      <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="txt">
+                <p>
+                  왓챠는 모두의 다름이 인정받고 개인의 취향이 존중받는, 더
+                  다양한 세상을 만들어갑니다.
+                  <br />
+                  왓챠의 모든 서비스는 더 많은 사람들이 자신의 취향을 깨닫고,
+                  취향에 맞는 콘텐츠를 발견할 수 있도록 하는 것을 목표로 합니다.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="title">
+                <div class="btn">
+                  <h4>왓챠는 어디에서 시청할 수 있나요??</h4>
+                  <button>
+                    <div class="icon1">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon2">
+                      <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="txt">
+                <p>
+                  왓챠는 모바일 기기, 웹 브라우저, 게임 콘솔, 셋톱박스, 스마트
+                  TV에서 이용할 수 있습니다.<br />
+                  지원되는 기기의 전체 목록을 보려면
+                  <a href="#">여기를 클릭</a>여기를 클릭하세요.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="title">
+                <div class="btn">
+                  <h4>왓챠 계정을 타인과 공유할 수 있나요?</h4>
+                  <button>
+                    <div class="icon1">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon2">
+                      <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="txt">
+                <p>
+                  왓차 계정은 왓챠 이용약관에 따라, 본인 외 제 3 자가 이용할 수
+                  없는 것을 원칙으로 합니다.<br />
+                  2025년 4월 2일부터 시행되는 계정 공유 정책에 따라 회원님과
+                  함께 거주하는 동일가구 구성원에 한하여 회원님의 계정으로
+                  <br />티빙 서비스 이용이 허용됩니다. 만약, 가구 구성원이 아닌
+                  경우 본인의 계정으로 가입하여 이용하셔야 합니다.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="title">
+                <div class="btn">
+                  <h4>왓챠를 얼마에 이용할 수 있나요?</h4>
+                  <button>
+                    <div class="icon1">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="icon2">
+                      <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="txt">
+                <p>
+                  왓챠 스탠다드(부가세 포함): 월 ₩9,900 / 연 ₩99,000 디즈니+
+                  프리미엄(부가세 포함): 월 ₩13,900 / 연 ₩139,000
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="Box1">
+          <ul class="left">
+            <li>
+              <a href="#"><h3>고객센터</h3></a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="#"><h3>이용약관</h3></a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="#"><h3>개인정보처리방침</h3></a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="#"><h3>청소년 보호정책</h3></a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="#"><h3>이벤트</h3></a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="#"><h3>채용정보</h3></a>
+            </li>
+          </ul>
+
+          <ul class="right">
+            <li>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Box2">
+          <div class="st">
+            <p>
+              왓챠대표 : 박태훈 | 사업자등록번호 211-88-66013 | 통신판매업
+              신고번호 제 2019-서울서초-0965호
+            </p>
+            <p>
+              사업장 : 서울특별시 서초구 강남대로 343 신덕빌딩 3층 | 호스팅
+              서비스 제공자 : 아마존웹서비시즈코리아 유한회사
+            </p>
+            <p>
+              고객센터 : (평일 09시~18시/공휴일 휴무) | 챗봇/채팅상담 |
+              1:1게시판 문의 | 유료ARS : 1234-5678
+            </p>
+            <p>호스팅 서비스 제공자 아마존웹서비시즈코리아 유한회사</p>
+          </div>
+        </div>
+        <div class="Box3">
+          <img src="img/logo fff.png" />Copyright © 2025 by Watcha, Inc.All
+          rights reserved.
+        </div>
+      </footer>
+    </div>
+    <script>
+      //CON03
+
+      $(function () {
+        $(".list").simplyScroll({
+          speed: 1,
+          pauseOnHover: false, //마우스 갖다대면 일시정지 안멈춤
+          pauseOnTouch: false, //모바일 터치하면 일시정지 안멈춤
+          direction: "backwards", //뒤로가게 하기
+        });
+      });
+      $(function () {
+        $(".list2").simplyScroll({
+          speed: 1,
+          pauseOnHover: false, //마우스 갖다대면 일시정지 안멈춤
+          pauseOnTouch: false, //모바일 터치하면 일시정지 안멈춤
+          //   direction: "backwards", //뒤로가게 하기
+        });
+      });
+      gsap.registerPlugin(ScrollTrigger);
+    </script>
+  </body>
+</html>
